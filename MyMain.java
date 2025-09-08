@@ -28,31 +28,59 @@ public String toString() {
 
   public class MyMain {
 
+    store(<input stream>, <linked list>){
+      File dataFile1 = "StudentList.txt";
+    boolean hasNext = true;
+    Scanner fileScanner1 = new Scanner(dataFile1);
+      string item1 = fileScanner1.nextString();
+      string item2 = fileScanner1.nextString();
+      string item3 = fileScanner1.nextString();
+      while(Next){
+      
+        Person temp = Person( item1, item2, item3);
+        list.add(temp);
+       if (fileScanner1.hasNext()) {
+				 string item1 = fileScanner1.nextString();
+         string item2 = fileScanner1.nextString();
+         string item3 = fileScanner1.nextString();
+			    } else {
+				    Next = false;
+     
+			          }
+      }
+      
+    }
+
 
     staticvoid display(<output stream>, <linked list>){
       for( int i = 0; i <= list.size(); i++){
-        string entry = Personlist.get(i);
-        println /// add print here
+        person entry = Personlist.get(i);
+       System.out.println(entry.toString);
       }
     }
 
-    staticvoid find(<string target>,<linked list>){
+    staticvoid find(string sid,<linked list>){
       bool found = false;
     for( int i = 0; i <= list.size(); found== false i++){
         Current_Person entry = Personlist.get(i);
-        if(entry.getFirst() == target)
+        if(entry.getFirst() == sid)
           found = true;
-      else if(entry.getLast() == target)
+      else if(entry.getLast() == sid)
           found = true;
-      else if(entry.getID() == target)
+      else if(entry.getID() == sid)
           found = true;
       if(found)
-        print
+        System.out.println("Entry found at index" + i);
+        return i;
+      }
+      if(!found){
+        System.out.println("Not found");
+        return -1;
       }
 
     }
 
 
-
+fileScanner1.close();
     
 }
