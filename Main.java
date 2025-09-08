@@ -21,6 +21,19 @@ Public String getID() {
 @override
 public String toString() {
   return 'Person{Firstname='" + Firstname + "', Lastname=" + Lastname + "', ID =" + ID + "}:;
+
 }
 
+
+
+  public class MyMain {
+
+
+    staticvoid display(<output stream>, <linked list>){
+      
+    }
+
+
+
+    
 }
